@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "mTLS: successful handshake",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["run", "success"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "mTLS: all failure modes",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["all"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "mTLS: missing client certificate",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["run", "missing-client-cert"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
